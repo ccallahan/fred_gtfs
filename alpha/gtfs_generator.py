@@ -23,12 +23,12 @@ service_period.SetDateHasService("20191225", has_service=False) # Christmas Day
 
 # Stafford County Runs
 
-route_d1 = schedule.AddRoute(short_name="D1", long_name="Train Station to Olde Forge")
-route_d2 = schedule.AddRoute(short_name="D2", long_name="FRED Central, Olde Forge, England Run, GEICO")
-route_d3 = schedule.AddRoute(short_name="D3", long_name="Stafford Shopping Loop")
-route_d4 = schedule.AddRoute(short_name="D4", long_name="Stafford Marketplace to Northampton Blvd.")
-route_d5 = schedule.AddRoute(short_name="D5", long_name="FRED Central to Stafford Courthouse")
-route_d6 = schedule.AddRoute(short_name="D6", long_name="Stafford County EXPRESS")
+route_d1 = schedule.AddRoute(short_name="D1", long_name="Train Station to Olde Forge", route_type="Bus", route_id="D1")
+route_d2 = schedule.AddRoute(short_name="D2", long_name="FRED Central, Olde Forge, England Run, GEICO", route_type="Bus", route_id="D2")
+route_d3 = schedule.AddRoute(short_name="D3", long_name="Stafford Shopping Loop",route_type="Bus", route_id="D3")
+route_d4 = schedule.AddRoute(short_name="D4", long_name="Stafford Marketplace to Northampton Blvd.", route_type="Bus", route_id="D4")
+route_d5 = schedule.AddRoute(short_name="D5", long_name="FRED Central to Stafford Courthouse", route_type="Bus", route_id="D5")
+route_d6 = schedule.AddRoute(short_name="D6", long_name="Stafford County EXPRESS", route_type="Bus", route_id="D6")
 
 # Stafford Routes
 
