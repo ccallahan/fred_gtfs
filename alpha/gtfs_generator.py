@@ -1,4 +1,6 @@
 import transitfeed
+import holidays
+
 
 schedule = transitfeed.Schedule()
 
@@ -10,7 +12,7 @@ service_period.SetEndDate("20200913") # Probably should review this a year from 
 service_period.SetWeekdayService(has_service=True)
 
 # Now we set holidays.
-
+    #This needs some work, end goal is to add auto-holiday fill using the Python 'holidays' Libs.  -wertyy102
 service_period.SetDateHasService("20200101", has_service=False) # New Years Day
 service_period.SetDateHasService("20200525", has_service=False) # Memorial Day
 service_period.SetDateHasService("20200704", has_service=False) # National High Explosives Day
@@ -18,6 +20,21 @@ service_period.SetDateHasService("20200907", has_service=False) # Labor Day
 service_period.SetDateHasService("20191128", has_service=False) # Turkey Day
 service_period.SetDateHasService("20191224", has_service=False) # Christmas Eve
 service_period.SetDateHasService("20191225", has_service=False) # Christmas Day
+
+
+    # Holidays psuedo-code followed by possible functioning holidays code.
+#
+#           using holiday name, set holiday date to closed.  
+#
+#    service_period.SetDateHasService("20200101", has_service=False) # New Years Day
+#    service_period.SetDateHasService("20200525", has_service=False) # Memorial Day
+#    service_period.SetDateHasService("20200704", has_service=False) # National High Explosives Day
+#    service_period.SetDateHasService("20200907", has_service=False) # Labor Day
+#    service_period.SetDateHasService("20191128", has_service=False) # Turkey Day
+#    service_period.SetDateHasService("20191224", has_service=False) # Christmas Eve
+#    service_period.SetDateHasService("20191225", has_service=False) # Christmas Day
+
+
 
 # Add the routes.
 
