@@ -10,9 +10,9 @@ This is the current status of each route,
 
 Route | Stops Identified | Timing Calculated | Verification Run 1 | Corrections | Verification Run 2 | Corrections | Beta | Stable
 ------|------------------|-------------------|--------------------|-------------|--------------------|-------------|------|-------
-D1 | In Progress (9/13/2019) | In Progress (9/13/2019) | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done
-D2 | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done
-D3 | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done
+D1 | Complete (9/13/2019) | In Progress (9/13/2019) | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done
+D2 | Complete (9/13/2019) | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done
+D3 | In Progress (9/13/2019) | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done
 D4 | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done
 D5 | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done
 D6 | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done | Not Done
