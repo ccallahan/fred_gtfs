@@ -74,6 +74,43 @@ stop_425 = schedule.AddStop(stop_id="425", name="Town and Country Dr. near Giant
 stop_420 = schedule.AddStop(stop_id="420", name="Ferry Rd. and Town and Country Dr.", lat="38.296783", lng="-77.422602")
 stop_108 = schedule.AddStop(stop_id="108", name="Dixon and Charles St.", lat="38.293858", lng="-77.456569")
 
+# D1 Shape
+
+shape_d1 = transitfeed.Shape("shape_d1")
+shape_d1.AddPoint(lat="38.298318", lon="-77.456132")
+shape_d1.AddPoint(lat="38.29797", lon="-77.457208")
+shape_d1.AddPoint(lat="38.294347", lon="-77.456577")
+shape_d1.AddPoint(lat="38.28375", lon="-77.43654")
+shape_d1.AddPoint(lat="38.297955", lon="-77.446622")
+shape_d1.AddPoint(lat="38.305928", lon="-77.452731")
+shape_d1.AddPoint(lat="38.310067", lon="-77.448175")
+shape_d1.AddPoint(lat="38.313291", lon="-77.450801")
+shape_d1.AddPoint(lat="38.337279", lon="-77.485423")
+shape_d1.AddPoint(lat="38.337167", lon="-77.485917")
+shape_d1.AddPoint(lat="38.33553", lon="-77.482431")
+shape_d1.AddPoint(lat="38.317363", lon="-77.456062")
+shape_d1.AddPoint(lat="38.327251", lon="-77.439217")
+shape_d1.AddPoint(lat="38.32585", lon="-77.432881")
+shape_d1.AddPoint(lat="38.31813", lon="-77.432036")
+shape_d1.AddPoint(lat="38.317954", lon="-77.430227")
+shape_d1.AddPoint(lat="38.317365", lon="-77.425359")
+shape_d1.AddPoint(lat="38.313472", lon="-77.426963")
+shape_d1.AddPoint(lat="38.309055", lon="-77.42897")
+shape_d1.AddPoint(lat="38.296783", lon="-77.422602")
+shape_d1.AddPoint(lat="38.293858", lon="-77.456569")
+
+schedule.AddShapeObject(shape_d1)
+
 # D1 Timetable
 run_d1 = route_d1.AddTrip(schedule, headsign="Train Station to Olde Forge")
-run_d1.AddStopTime(stop_6, schedule="09:00:00")
+run_d1.shape_id = "shape_d1"
+
+# D1 - 0900
+run_d1.AddStopTime(stop=stop_6, schedule="09:00:00", problems=None)
+run_d1.AddStopTime(stop=stop_401, schedule="09:07:00")
+run_d1.AddStopTime(stop=stop_451, schedule="09:22:00")
+run_d1.AddStopTime(stop=stop_401, schedule="09:50:00")
+run_d1.AddStopTime(stop=stop_6, schedule="10:00:00")
+
+schedule.Validate()
+schedule.WriteGoogleTransitFeed("gtfs_fred.zip")
