@@ -66,3 +66,11 @@ stop_435 = schedule.AddStop(stop_id="435", name="Culpeper St. and Greenwood Dr."
 stop_433 = schedule.AddStop(stop_id="433", name="Sherwood Dr. and Culpeper St.", lat="38.31813", lng="-77.432036")
 stop_431 = schedule.AddStop(stop_id="431", name="Sherwood Dr. and Adam Ct.", lat="38.317954", lng="-77.430227")
 stop_429 = schedule.AddStop(stop_id="429", name="Sherwood and Edwards Dr.", lat="38.317365", lng="-77.425359")
+stop_427 = schedule.AddStop(stop_id="427", name="Little Whim Rd and Pribble Ln", lat="38.313472", lng="-77.426963")
+stop_425 = schedule.AddStop(stop_id="425", name="Town and Country Dr. near Giant", lat="38.309055", lng="-77.42897")
+stop_420 = schedule.AddStop(stop_id="420", name="Ferry Rd. and Town and Country Dr.", lat="38.296783", lng="-77.422602")
+stop_108 = schedule.AddStop(stop_id="108", name="Dixon and Charles St.", lat="38.293858", lng="-77.456569")
+
+# D1 Timetable
+run_d1 = route_d1.AddTrip(schedule, headsign="Train Station to Olde Forge")
+run_d1.AddStopTime(stop_6, schedule="09:00:00")
