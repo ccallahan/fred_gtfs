@@ -2,7 +2,7 @@
 Reverse engineered GTFS file for the Fredericksburg Regional Transit system.
 
 # WARNING!
-This is ***reverse engineered***! There probably are issues with it, including exact stop locations. The only information that should be mostly reliable is the timetables and fares, because I really can't screw those up easily. As I get time, my plan is to ride the routes and manually mark stuff down as I see it, but that will take a few weeks.
+This is ***reverse engineered***!!1!! There probably are issues with it, including exact stop locations. The only information that should be mostly reliable is the timetables and fares, because I really can't screw those up easily. As I get time, my plan is to ride the routes and manually mark stuff down as I see it, but that will take a few weeks.
 
 ## Status
 
